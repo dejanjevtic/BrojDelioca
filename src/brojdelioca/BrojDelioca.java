@@ -15,7 +15,8 @@ public class BrojDelioca {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       int n = 24;
+        System.out.println(divCount(n));
     }
     
 }

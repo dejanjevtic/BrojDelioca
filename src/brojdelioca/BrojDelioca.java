@@ -5,12 +5,25 @@
  */
 package brojdelioca;
 
+import java.util.Arrays;
+
 /**
  *
  * @author admin
  */
 public class BrojDelioca {
-
+    static int divCount(int n)
+{
+    // sieve method for prime calculation
+    boolean hash[] = new boolean[n + 1];
+    Arrays.fill(hash, true);
+    for (int p = 2; p * p < n; p++)
+        if (hash[p] == true)
+            for (int i = p * 2; i < n; i += p)
+                hash[i] = false;
+  
+    
+}
     /**
      * @param args the command line arguments
      */
